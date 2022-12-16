@@ -59,7 +59,7 @@
         <div class="hero-title" data-aos="fade-up" data-aos-delay="200">
           <h1>pencil, to pen, to paint <br/>- <em>an exploration <br/>of mediums</em></h1>
           <br/>
-          <h2>using interface components and internal data states <br/>to develop an interactive interface
+          <h2>an investigation of the medium of pencil, pen, and (oil, acrylic, watercolor) paint, <br/>and the intersection that exists between them 
           </h2>
         </div>
       </div>
@@ -75,29 +75,28 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>overview</h2>
+          <h2>context</h2>
         </div>
 
         <div class="about-text">
             <h4>
-              Now that I've learned how to create a cohesive visual for websites and how to use hierarchical elements to demonstrate 
-              importance and guide the flow of a website, it was time to learn how to make it actually functional and interactive! <br/> <br/> 
-              Thus, with this site, I explored the process of using multiple interface components and tying those components to an 
-              internal data structure to  develop an interface that is fully functional to serve customers who are growing for potential boba options. 
+              growing up, I was always taught that the process of creating a painting was as follows: 1. make a sketch of what was going to be painted 2. finalize the sketch 3. lightly erase the pencil sketch so that you could only see faint lines on the canvas 4. begin painting. 
+              <br/><br/>works of pencil were typically more present in the preparation part of the process and seemed to present a more “unfinished” look, and the paint was meant to complete and polish the piece. 
+              <br/><br/> thus, it always seemed that on paper, the two mediums served completely distinct roles and had little room to coexist. but should that be the case? this project was an investigation on the medium of pencil, pen, and (oil, acrylic, watercolor) paint, and the borders they share and the lines that divide them. 
             </h4>
         </div>
 
         <div class="section-title">
           <br/>
-          <h2>why (is this important)?</h2>
+          <h2>methodology</h2>
         </div>
 
         <div class="problem-text">
             <h4>
-              While one half of UI/UX is design, the other half is user interaction. And having a convenient system in which users will not be confused 
-              using is a huge aspect in what makes or breaks a website. 
-              A large part of the user interaction is figuring out the target audience of your site and try to tailor the components 
-              of the interactions to their needs. Thus…
+              for each of my pieces in this project, I started by creating a pencil outline of the scene as usual. 
+              then, instead of lightly erasing the pencil lines, I directly place paint onto the focal points of the piece. 
+              then, at the points of the intersection between the two mediums, I use a ballpoint pen to work over the pencil marks.
+
             </h4>
         </div>
 
@@ -111,43 +110,30 @@
 
         <div class="row">
           <div class="section-title">
-            <h2>steps</h2>
-            <p>since my boba store will mainly be targeting those who will use the site to browse for their favorite items or to scrolling through to discover new items to try, 
-              I implemented features that would best suit their needs and would allow them to get to their wanted item quickly.</p>
+            <h2>works</h2>
+            <p>these are the pieces I created for the project, varying in size, canvas surface, and paint medium used</p>
           </div>
-          </h3>
         </div>
 
           <div class="observations">
-            <h3><strong>step one:</strong>   <br/><span class="highlight">sort & filter</span></h3>
+            <h3><strong>work one:</strong>  <br/><span class="highlight">main piece</span></h3>
+            <p><br/><em>[Oil, Pen, Pencil on Canvas] 2020<br/>
+              20 in x 14 in</em></p>
+            <div class="visual-design-guide">
+              <img src="assets/img/artwork.jpeg" width= 850px alt=""/>
+            </div>
             <p>
-              <br/>
-                I first implemented a <em>sort section</em> that would allow the user to sort the items by default (sort by popularity of drinks) or to sort by prices low to high. 
-                <br/><br/>
-                I also implemented two <em>filters</em> that let the users shop/browse the items they want to order by category (in this case: Milk Tea vs Specialty and Caffeinated vs Decaffeinated).
-                <br/><br/> <em>see interaction of components here:</em>
+              <br/>              
+              This painting depicts a scene similar to the one of my hometown back in China. After coming 
+              to America, I frequently felt pangs of nostalgia and would put myself back into the moment 
+              in time when I was at my grandmother's house. In that way, this work is a play on memory. 
+              From right to left, it illustrates the image of my childhood home forming while going from 
+              left to right, it seems as if the colorful memories are fading away. In addition, with this 
+              piece, I wanted to experiment with the wooden surface and observe how different mediums 
+              interact with each other. The transitions between pencil, pen, and oil imitate the creation 
+              process which starts with light sketches, then micron outlining, and finally paint 
+              application— a parallel for the puzzle pieces of memory that build upon each other as they form.
               </p>
-          </div>
-
-          <div class="visual-design-guide">
-            <img src="assets/img/development.gif" width= 1000px alt="gif of sort and filter components in action"/>
-          </div>
-
-          <div class="observations">
-            <h3><strong>step two:</strong>   <br/><span class="highlight">add to cart (aggregator)</span></h3>
-              <p>
-              <h4 class="bullet-text">
-                <br/>
-                An ordering site surely cannot be complete without a cart component! Thus, I also created an aggregator component which is displayed on the side of the interface so that users can see 
-                immediately what items were added and what can be removed. In addition:<br/><br/>
-                &#x2022; The menu item contains both an add to cart and remove from cart button as opposed to one single button that changes states (from “add” to “remove”) when clicked so that users can add/remove an item multiple times.<br/><br/>
-                &#x2022; And when the cart is empty, it gently nudges the user to start shopping!
-              </h4>
-              </p>
-          </div>
-
-          <div class="visual-design-guide">
-            <img src="assets/img/development_cart.gif" width= 1000px alt="add to cart components in action"/>
           </div>
 
       </div>
@@ -159,9 +145,9 @@
 
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Additional Note!</h3>
-            <p> The Aggregator component extends from App (	&lt;Aggregator cart={cart}>	&lt;/Aggregator &gt; in App) and receives its menu items data from menu-data.json. The MenuItem component from extends from App and receives its menu items data from menu-data.json. 
-              When the aggregator data is updated, the props change and the aggregator renders with the updated data.
+            <h3>Analysis</h3>
+            <p> This piece utilized the pencil to pen to paint transition to create the illustion of memories fading. 
+              <br/>However, some thought the piece was unfinished due to the pencil sketches still present in the piece.
             </p>
           </div>
         </div>
@@ -169,8 +155,68 @@
       </div>
     </section><!-- End Cta Section -->
 
+     <!-- ======= Portfolio Section ======= -->
+     <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>the collection</h2>
+          <!-- <p>Below are all the pieces I created for the project!</p> -->
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">Oil Paint</li>
+          <li data-filter=".filter-card">Acrylic Paint</li>
+          <li data-filter=".filter-web">Others</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/artwork.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Piece 1</h4>
+              <p>Pencil, Pen, Oil</p>
+              <a href="assets/img/artwork.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="[Pencil, Pen, Oil]"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/drawing3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Piece 2</h4>
+              <p>Pencil, Pen, Acrylic</p>
+              <a href="assets/img/drawing3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="[Pencil, Pen, Acrylic]"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/drawing.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Piece 3</h4>
+              <p>Pencil, Pen, Watercolor</p>
+              <a href="assets/img/drawing.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="[Pencil, Pen, Watercolor]"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/drawing2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Piece 4</h4>
+              <p>Pencil, Pen, Marker</p>
+              <a href="assets/img/drawing2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="[Pencil, Pen, Marker]"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+        
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
     <!-- ======= Storyboard Section ======= -->
-    <section id="services" class="services section-bg">
+    <!-- <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -198,7 +244,8 @@
         </div>
       </div>
 
-    </section><!-- End Services Section -->
+    </section> -->
+    <!-- End Services Section -->
 
     <!-- ======= Reflection Section ======= -->
     <section id="reflection" class="reflection">
@@ -210,11 +257,9 @@
 
         <div class="reflection-text">
           <h4>
-            From working on the interactive elements on this site, I was able to get a better idea of how components worked 
-            individually as well as in relation to each other. I also got a deeper understanding of how State Change works to 
-            update the data passed down in the lists. Although I am mostly happy with how the site looks, in the future, 
-            I would try to align the filter checkboxes better so that they do not have different margins. 
-            I would also try to make “add to cart” a separate pop up that opens up when you click on it.
+            after exploring the boundaries of mixed media, more specifically, <br/>the usage of pencil, pen, and paint in the same piece, 
+            <br/>I was able to conclude that not only can the three medium <br/>co-exist, 
+            they enhance each other visually and tell a <br/>deeper story that simply using one medium cannot.
           </h4>
       </div>
       </div>
